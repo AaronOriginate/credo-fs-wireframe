@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@theme inline {
+  /* Vibe page palette */
+  --color-navy: #1A2D46;
+  --color-navy-deep: #142336;
+  --color-dark: #2D3748;
+  --color-yellow: #E8EA3A;
+  --color-yellow-hover: #d4d634;
+  --color-teal: #0D9488;
+  --color-gray-light: #F3F4F6;
+  --color-white: #ffffff;
+  --color-text-dark: #0F1419;
+  --color-text-muted: #4A5568;
+  --color-text-light: #718096;
+  --color-border: #E2E8F0;
+
+  --font-heading: var(--font-space-grotesk);
+  --font-body: var(--font-inter);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body), system-ui, sans-serif;
+  color: var(--color-text-dark);
+  background: var(--color-white);
+}
+
+/* Section label pattern from vibe page */
+.section-label {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding-bottom: 16px;
+  border-bottom: 2px solid var(--color-yellow);
+  display: inline-block;
+  margin-bottom: 32px;
+}
+
+.section-label-dark {
+  color: var(--color-white);
+}
+
+.section-label-light {
+  color: var(--color-navy);
+}
